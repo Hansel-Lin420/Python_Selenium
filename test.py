@@ -10,7 +10,7 @@ import time
 
 driver = webdriver.Chrome('./chromedriver')
 driver.maximize_window()
-
+time.sleep(2)
 driver.get("https://www.google.com/")
 time.sleep(2)
 search_input = driver.find_element_by_name("q")
