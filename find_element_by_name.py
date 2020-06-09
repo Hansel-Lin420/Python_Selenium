@@ -7,7 +7,7 @@ Created on Mon Jun  1 03:10:51 2020
 
 from selenium import webdriver
 import time
-driver = webdriver.Chrome('./chromedriver')
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get('https://www.google.com.tw/')
 driver.find_element_by_name('q').send_keys('asia university')
