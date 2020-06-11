@@ -11,8 +11,13 @@ reverse =""
 
 print("%s , %0.2f"%(name,height))
 print("{0} , {1}".format(name,height))
+'''
+if
+'''
+print("-----if-----")
 
 score= (int)(input ('請輸入成績:'))
+
 if score >=90 :
     print("優秀")
 elif score >=70:
@@ -21,6 +26,10 @@ elif score >= 60:
     print("及格")
 else:
     print("不及格")
+    '''
+for
+'''
+print("-----for-----")
 for s in "hello":
     print(s)
 fruits = ['banana','apple','mango']
@@ -120,7 +129,36 @@ print(count.add())
 
 class B(A):
     
-    def sub(self,a,b):
-        return a - b
+    def sub(self):
+        
+        return self.a - self.b
 print(B(2,3).add())
-print(B(2,3).sub(2,3))
+print(B(2,3).sub())
+
+class C:
+    def __init__(self,a,b):
+        self.a = int(a)
+        self.b = int(b)
+    
+    def mult(self):
+        return self.a * self.b
+count = C(4,5)
+print(count.mult())
+'''
+模組
+'''
+import time
+
+print(time.ctime())
+
+from time import ctime
+print(ctime())
+
+from time import time, sleep
+
+from time import *
+
+print(ctime())
+print("休眠兩秒")
+sleep(2)
+print(ctime())
